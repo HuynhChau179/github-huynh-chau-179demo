@@ -1,0 +1,25 @@
+table tr td:nth-child(1){
+    width: 200px;
+}
+body{
+    background-color: rgb(113, 155, 222);
+}
+h2,p{
+    text-align: center;
+}
+
+.container{
+    margin-left:  70px;
+    margin-top: 0;
+}
+
+#address input{
+    width: 200px;
+}
+#comment input{
+    width: 400px;
+    height: 100px;
+}
+hr{
+    width: 80%;
+}

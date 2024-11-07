@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson</title>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+
+    <center>
+    <img src="hinh/Jackson.gif" alt="">
+    </center>
+    <h2>Registration Form</h2>
+    <p>Register your Jackson Electronics product here</p>
+    <form action="">
+    <div class="container">
+    <table style="margin-top: 0;">
+        <tr>
+            <td>First Name:</td>
+            <td>
+                <input type="text" name="fname"> Last Name:
+                <input type="text"name="lname">
+            </td>
+        </tr>
+        <tr id="address">
+            <td>Address #1:</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr id="address">
+            <td>Address #2:</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>
+                <input type="text" >State: <input type="text" style="width: 50px;"> Zip: <input type="text" style="width: 80px;">
+            </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <input type="text" value="United States">
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <table>
+        <tr>
+            <td>Product:</td>
+            <td>
+                <select name="product" id="" style="width: 120px;">
+                    <option>ScanMaster</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Date Purchased:</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Serial #:</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Used for:</td>
+            <td>
+                <input type="radio" name="use">Home
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="use">Educational Institution
+            </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="radio" name="use">Business &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="use">Other
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="radio" name="use">Goverment</td>
+        </tr>
+        <tr>
+            <td>System (check all that apply):</td>
+            <td>
+                <input type="checkbox" name="sys1">Windows &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+                <input type="checkbox" name="sys2">UNIX
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox"name="sys3">Macintosh &nbsp; &nbsp;&nbsp;
+                <input type="checkbox"name="sys4">Other
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table id="comment">
+        <tr>
+            <td>Comments?:</td>
+            <td rowspan="5" colspan="5"><input type="text"></td>
+        </tr>
+    </table>
+</div>
+<center>
+    <button onclick="alert('Registered')">Click to register</button>
+    <button type="reset">Click to cancel</button>
+</center>
+</form>
+</body>
+</html>

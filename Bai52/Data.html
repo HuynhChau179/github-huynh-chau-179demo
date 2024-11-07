@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getUrlVars(){
+            var vars ={};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+            function (m, key, value){
+                vars[key] = value;
+            });
+            return vars;
+        }
+        var ten= unescape(getUrlVars()["txtten"]);
+        var email = unescape(getUrlVars()["txtemail"]);
+        var gtinh = unescape(getUrlVars()["gender"]);
+        var que =  unescape(getUrlVars()["home"]);
+        var vclam =  unescape(getUrlVars()["workstatus"]);
+        var context =  unescape(getUrlVars()["context"]);
+    </script>
+</head>
+<body>
+    <form >
+        <table>
+            <tr>
+                <td>Họ và tên: </td>
+                <td id="iduser" style="font-family: 'Courier New', Courier, monospace;"></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td id="idemail"></td>
+            </tr>
+            <tr>
+                <td>Gioi tinh:  </td>
+                <td id="idgtinh"></td>
+            </tr>
+            <tr>
+                <td>Tình trạng nghề nghiệp: </td>
+                <td id="idvclam"></td>
+            </tr>
+            <tr>
+                <td>Đến từ: </td>
+                <td id="idhome"></td>
+            </tr>
+            <tr>
+                <td>Nội dung của chúng tôi: </td>
+                <td id="idcontext"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        document.getElementById("iduser").innerHTML = ten
+        document.getElementById("idemail").innerHTML = email
+        document.getElementById("idgtinh").innerHTML = gtinh
+        document.getElementById("idhome").innerHTML = que
+        document.getElementById("idvclam").innerHTML = vclam
+        document.getElementById("idcontext").innerHTML = context
+    </script>
+    
+</body>
+</html>
