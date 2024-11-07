@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getUrlVars(){
+            var vars ={};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+            function (m, key, value){
+                vars[key] = value;
+            });
+            return vars;
+        }
+        var Mqty= unescape(getUrlVars()["Mqty"]);
+        var Mitem = unescape(getUrlVars()["Mitem"]);
+        var Kqty = unescape(getUrlVars()["Kqty"]);
+        var Kitem =  unescape(getUrlVars()["Kitem"]);
+        var Uqty =  unescape(getUrlVars()["Uqty"]);
+        var Uitem =  unescape(getUrlVars()["Uitem"]);
+        var Total = unescape(getUrlVars()["total"]);
+    </script>
+    <style>
+        td{width: 150px;
+        text-align: center;}
+    </style>
+</head>
+<body>
+    <form >
+        <table>
+            <tr>
+                <th>Part Number</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Item table</th>
+            </tr>
+            <tr>
+                <td>C112</td>
+                <td>Mouse</td>
+                <td>19.95$</td>
+                <td id="idmq"></td>
+                <td id="idmi"></td>
+            </tr>
+            <tr>
+                <td>B124</td>
+                <td>Keyboard</td>
+                <td>29.95$</td>
+                <td id="idkq"></td>
+                <td id="idki"></td>
+            </tr>
+            <tr>
+                <td>U125</td>
+                <td>USB King Max</td>
+                <td>39.95$</td>
+                <td id="iduq"></td>
+                <td id="idui"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td id="idtt"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        document.getElementById("idmq").innerHTML = Mqty
+        document.getElementById("idmi").innerHTML = Mitem
+        document.getElementById("idkq").innerHTML = Kqty
+        document.getElementById("idki").innerHTML = Kitem
+        document.getElementById("iduq").innerHTML = Uqty
+        document.getElementById("idui").innerHTML = Uitem
+        document.getElementById("idtt").innerHTML = Total
+    </script>
+    
+</body>
+</html>
